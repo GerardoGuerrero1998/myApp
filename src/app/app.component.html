@@ -1,0 +1,28 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+  <ion-menu contentId="main-content" type="overlay">
+    <ion-content>
+      <ion-list id="inbox-list">
+        <ion-list-header>Menu</ion-list-header><br>
+        <ion-note><strong>Bienvenido al menú de tu aplicación,
+        nos gustaría que navegues por las diferentes secciones que tenemos,<br>
+        selecciona uno de ellos y disfrútalo.</strong></ion-note>
+        
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+          <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
+            <ion-icon slot="start" [ios]="p.icon" [md]="p.icon"></ion-icon>
+            <ion-label>{{ p.title }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-list-header>Soporte</ion-list-header><br>
+        <ion-note>cena-gera@hotmail.com <ion-icon name="mail-outline"></ion-icon></ion-note>
+        <ion-note><strong><u>Gerardo Guerrero</u></strong></ion-note>
+        <ion-note><i><strong>Danos tu opinion: <a href="https://docs.google.com/forms/d/e/1FAIpQLSevwCVKX0HTqcnPL9ZCgcbkyozqZKK-6JLvIQ2r099nPS0JWw/viewform">Enlace aqui</a></strong></i></ion-note>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-split-pane>
+</ion-app>

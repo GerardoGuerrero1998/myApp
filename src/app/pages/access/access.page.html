@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ACCEDE A UNA CUENTA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-progress-bar color="danger" type="indeterminate" reversed="true"></ion-progress-bar>
+      <img src="../../../assets/svg/access.svg" height="200px" width="400px">
+    <ion-progress-bar color="danger" type="indeterminate"></ion-progress-bar>
+</ion-card>
+<ion-card>
+  <ion-card-subtitle>Email</ion-card-subtitle>
+  <ion-input placeholder="ejemplo@hotmail.com" name="email" [(ngModel)]="access.email"></ion-input>
+</ion-card>
+<ion-card>
+  <ion-card-subtitle>Contraseña</ion-card-subtitle>
+  <ion-input placeholder="contraseña123" type="password" name="password" [(ngModel)]="access.password"></ion-input>
+</ion-card>
+<ion-card>
+  <ion-card-content>
+    Una vez que haya ingresado a la aplicación, no olvide dejarnos su opinión, nuestro trabajo es ayudarlo en esta cuarentena a mantenerse actualizado con las noticias más importantes de COVID-19, ayúdenos a mejorar dejándonos sus comentarios. JUNTOS SALDREMOS ADELANTE.
+  </ion-card-content>
+</ion-card>
+
+<ion-button color="danger" (click)="signIn()" shape="round">ENTRAR A MI CUENTA<ion-icon slot="end" name="logo-angular"></ion-icon></ion-button><br>
+</ion-content>

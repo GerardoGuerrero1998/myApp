@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Mapas</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card>
+      <ion-item type="button" (click)="map()"><ion-icon slot="end" name="navigate-circle" color="danger"></ion-icon>
+        <ion-label>Mapas famosos del COVID-19</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/img/oms.jpg" alt="">
+        <h5>Conoce el mapa de la OMS</h5>
+        <ion-button expand="block" shape="round" (click)="open()" color="danger">Conocelo</ion-button><br>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/img/oms1.jpg" alt="">
+        <h5>Asi como algunos datos importantes</h5>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/img/bbc.png" alt="">
+        <h5>Mapa segun BBC NEWS</h5>
+        <ion-button expand="block" shape="round" (click)="open1()" color="danger">Conocelo</ion-button><br>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/img/bbc1.jpg" alt="">
+        <h5>Mira como esta el mapa de BBC NEWS</h5>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/img/dash1.jpg" alt="">
+        <h5>DASHBOARD de COVID-19</h5>
+        <ion-button expand="block" shape="round" (click)="open2()" color="danger">Conocelo</ion-button><br>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="../../../assets/img/dash.jpg" alt="">
+        <h5>Un dashboard muy completo con datos exactos</h5>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

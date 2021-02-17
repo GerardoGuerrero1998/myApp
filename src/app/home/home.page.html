@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title mode="ios">BIENVENIDOS<i class="fa fa-user" aria-hidden="true"></i></ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="signOut()">Salir</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <ion-item button routerLink="/actvs"><ion-icon slot="end" name="book-outline"></ion-icon>
+          <ion-label>Seccion de Actividades</ion-label>
+        </ion-item>
+        <ion-card-title class="normal">Actividades para la cuarentena</ion-card-title>
+        <ion-card-content>Seccion dedicada al entretenimiento de las personas durante esta cuarentena.</ion-card-content>
+        <ion-card-content><img src="../../assets/svg/virtualclass.svg"></ion-card-content>
+        <ion-card-content><img src="../../assets/svg/fitness.svg"></ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <ion-item button routerLink="/graphics"><ion-icon slot="end" name=bar-chart-outline></ion-icon>
+          <ion-label>Seccion de Graficas</ion-label>
+        </ion-item>
+        <ion-card-title class="normal">Graficas hasta el momento</ion-card-title>
+        <ion-card-content>Seccion dedicada a una serie de graficas que tocan en el tema del coronavirus, informando la cifra de contagiados.</ion-card-content>
+        <ion-card-content><img src="../../assets/svg/data.svg"></ion-card-content>
+        <ion-card-content><img src="../../assets/svg/storage.svg"></ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <ion-item button routerLink="/maps"><ion-icon slot="end" name="navigate-outline"></ion-icon>
+          <ion-label>Seccion de Mapas</ion-label>
+        </ion-item>
+        <ion-card-title class="normal">Mapas de COVID-19</ion-card-title>
+        <ion-card-content>Seccion dedicada a los diferentes mapas creados por gente especializada en el tema del coronavirus, que busca informar la propagacion de este virus dañino el covid-19, conoce un poco de la situacion actual en el mundo desde esta forma grafica de ver los casos en otros paises.</ion-card-content>
+        <ion-card-content><img src="../../assets/svg/map.svg"></ion-card-content>
+        <ion-card-content><img src="../../assets/svg/worldmap.svg"></ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <ion-item button routerLink="/higiene"><ion-icon slot="end" name="medkit-outline"></ion-icon>
+          <ion-label>Seccion de Higiene</ion-label>
+        </ion-item>
+        <ion-card-title class="normal">Recomendaciones higienicas</ion-card-title>
+        <ion-card-content>Seccion dedicada a los cuidados necesarios que la poblacion deberia de conocer en medio de esta pandemia mundial, en este apartado se explicaran los cuidados recomendados por parte de organizaciones mundiales de la salud para cuidarnos al momento de salir de casa, al llegar a casa y buenos tips.</ion-card-content>
+        <ion-card-content><img src="../../assets/svg/washing_hands.svg"></ion-card-content>
+        <ion-card-content><img src="../../assets/svg/mask.svg"></ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

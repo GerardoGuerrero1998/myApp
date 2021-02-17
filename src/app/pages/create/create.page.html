@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title>CREA UNA CUENTA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-datetime mode="ios" placeholder="Ve el dia"></ion-datetime>
+  <ion-progress-bar color="danger" type="indeterminate"></ion-progress-bar>
+  <ion-card> 
+      <img src="../../../assets/svg/account.svg" height="200px" width="400px">
+  </ion-card>
+  <ion-progress-bar color="danger" type="indeterminate" reversed="true"></ion-progress-bar>
+  <ion-card>
+    <ion-card-subtitle>Nombre(s)</ion-card-subtitle>
+    <ion-input placeholder="Ingresa tu nombre" name="name" [(ngModel)]="user.name"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-card-subtitle>Apellido Paterno</ion-card-subtitle>
+    <ion-input placeholder="Ingresa tu apellido paterno" name="patern" [(ngModel)]="user.patern"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-card-subtitle>Apellido Materno</ion-card-subtitle>
+    <ion-input placeholder="Ingresa tu apellido materno" name="matern" [(ngModel)]="user.matern"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-card-subtitle>Email</ion-card-subtitle>
+    <ion-input placeholder="Ingresa tu email" name="user" [(ngModel)]="user.email"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-card-subtitle>Contraseña</ion-card-subtitle>
+    <ion-input placeholder="Ingresa tu contraseña" type="password" name="password" [(ngModel)]="user.password"></ion-input>
+  </ion-card>
+  <ion-card>
+    <ion-card-subtitle text-center>UserId</ion-card-subtitle>
+    <ion-input placeholder="Se genera automaticamente" *ngFor="let userId of enter; let i = index" name="userId" [(ngModel)]="user.userId"></ion-input>
+  </ion-card>
+  <ion-button color="danger" shape="round" (click)="signUp()" (click)="createData()">REGISTRATE<ion-icon slot="end" name="log-out-outline"></ion-icon></ion-button><br>
+</ion-content>
+

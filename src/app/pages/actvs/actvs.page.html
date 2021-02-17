@@ -1,0 +1,174 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Actividades</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card>
+      <ion-item><ion-icon slot="end" name="code-working-sharp"></ion-icon>
+        <ion-label>Tecnologia</ion-label>
+      </ion-item>
+        <ion-card-title class="normal">Trabaja en casa</ion-card-title>
+        <ion-card-content>Sabemos que el momento por el que estamos pasando es muy dificil para nosotros, porque se suspenden todo tipo de actividades, ya sea trabajar, estudiar, aprender de manera presencial. Asi que te mostraremos algunos programas o aplicaciones con las cuales puedes estudiar desde casa, trabajar de via remota, conversar con tus compañeros, entre otras actividades a distancia.</ion-card-content>
+        <ion-card-content><img src="../../../assets/svg/home_office.svg" height="50%" width="100%"></ion-card-content>
+        <ion-item>
+          <ion-label class="centralizar">
+            Plataformas para trabajar o estudiar 
+          </ion-label>
+        </ion-item>
+        <ion-item class="link" type="reset" (click)="trabajo()" color="danger">
+          <ion-label>
+            Disfruta de todos estos recursos
+          </ion-label>
+        </ion-item>
+    </ion-card>
+  </ion-list>
+  <ion-list>
+    <ion-card>
+      <ion-item><ion-icon slot="end" name="newspaper"></ion-icon>
+        <ion-label>Noticias</ion-label>
+      </ion-item>
+        <ion-card-title class="normal">Leer es una buena opcion</ion-card-title>
+        <ion-card-content>Si eres de las personas que no ven muchas noticias o no se encuentran informadas del COVID-19, que nadie te lo cuente, visita sitios informativos de salud confiables, puedes leer, conocer y aprender mas al respecto de la situacion.</ion-card-content>
+        <ion-card-content><img src="../../../assets/svg/newspaper.svg" height="50%" width="100%"></ion-card-content>
+        <ion-item class="link" type="reset" (click)="open()" color="danger" >
+        <ion-label>
+          Noticias mas importantes al momento
+        </ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+  <ion-list>
+    <ion-card>
+      <ion-item><ion-icon slot="end" name="barbell"></ion-icon>
+        <ion-label>Ejercicios</ion-label>
+      </ion-item>
+        <ion-card-title class="normal">Ejercitartate en casa</ion-card-title>
+        <ion-card-content>Eres de las personas adictas al gimnasio o quizas eres de esas que recien se animan a ejercitarse, el hacerlo en casa es mucho mas facil de lo que se pensaba, todo gracias a la tecnologia con la que contamos hoy en dia.</ion-card-content>
+        <ion-card-content><img src="../../../assets/svg/work_out.svg" height="50%" width="100%"></ion-card-content>
+        <ion-item>
+          <ion-label class="centralizar">
+            Descubre muchas maneras de activarte 
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label class="centralizar">
+            Checa estos canales de Youtube
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4">
+                <ion-button (click)="opc1()" color="danger">Opcion 1</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button (click)="opc2()" color="danger">Opcion 2</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button (click)="opc3()" color="danger">Opcion 3</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item class="link" type="reset" (click)="open1()" color="danger">
+          <ion-label>
+            Realiza ejercicio desde tu hogar
+          </ion-label>
+        </ion-item>
+    </ion-card>
+  </ion-list>
+  <ion-list>
+    <ion-card>
+      <ion-item><ion-icon slot="end" name="videocam"></ion-icon>
+        <ion-label>Entretenimiento</ion-label>
+      </ion-item>
+        <ion-card-title class="normal">Diviertete en casa</ion-card-title>
+        <ion-card-content>Eres de las personas adictas al gimnasio o quizas eres de esas que recien se animan a ejercitarse, el hacerlo en casa es mucho mas facil de lo que se pensaba, todo gracias a la tecnologia con la que contamos hoy en dia.</ion-card-content>
+        <ion-card-content><img src="../../../assets/svg/video_streaming.svg" height="50%" width="100%"></ion-card-content>
+        <ion-item>
+          <ion-label class="centralizar"> 
+            Descubre plataformas de streaming 
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4">
+                <ion-button (click)="video1()" color="danger">Netflix</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button (click)="video2()" color="danger">Prime M</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button (click)="video3()" color="danger">HBO GO</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item class="link" type="reset" (click)="video()" color="danger">
+          <ion-label class="centralizar">
+            Disfruta del mejor entretenimiento
+          </ion-label>
+        </ion-item>
+    </ion-card>
+  </ion-list>
+  <ion-list>
+    <ion-card>
+      <ion-item><ion-icon slot="end" name="musical-notes"></ion-icon>
+        <ion-label>Musica</ion-label>
+      </ion-item>
+        <ion-card-title class="normal">Crea un concierto en casa</ion-card-title>
+        <ion-card-content>La musica representa una parte de nosotros, podemos estar pasando por un mal dia pero al acostarnos y ponernos nuestros audifonos con nuestra playlist favorita, realmente rejuvenece el alma y te reencuentras con uno mismo.</ion-card-content>
+        <ion-card-content><img src="../../../assets/svg/music.svg" height="50%" width="100%"></ion-card-content>
+        <ion-item>
+          <ion-label class="centralizar">
+            Descubre musica de todas partes 
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="4">
+                <ion-button (click)="musica1()" color="danger">Youtube</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button (click)="musica2()" color="danger">Amazon</ion-button>
+              </ion-col>
+              <ion-col size="4">
+                <ion-button (click)="musica3()" color="danger">Spotify</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+        <ion-item class="link" type="reset" (click)="music()" color="danger">
+          <ion-label class="label">
+            Disfruta la mejor musica en casa
+          </ion-label>
+        </ion-item>
+    </ion-card>
+  </ion-list>
+  <ion-list>
+    <ion-card>
+      <ion-item><ion-icon slot="end" name="game-controller"></ion-icon>
+        <ion-label>Videojuegos</ion-label>
+      </ion-item>
+        <ion-card-title class="normal"></ion-card-title>
+        <ion-card-content>Los dias durante esta cuarentena se vuelven un poco repetitivos, ya que se acaban las ideas sobre que actividades realizar durante la contingencia, quizas el jugar videojuegos sea una buena opcion, no necesitas una consola para realizar estas actividades, desde tu computadora o celular puedes jugar, descubre excelentes emuladores que puedes descargar online.</ion-card-content>
+        <ion-item type="button" (click)="descargar()" color="light">
+          <ion-label>Descarga emuladores gratis aqui</ion-label>
+        </ion-item>
+        <ion-card-content><img src="../../../assets/svg/video_game.svg" height="50%" width="100%"></ion-card-content>
+        <ion-item class="link" type="reset" (click)="videojuegos()" color="danger">
+          <ion-label>
+            Descubre mas acerca de videojuegos
+          </ion-label>
+        </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>
